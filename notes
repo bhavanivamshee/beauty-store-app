@@ -1,0 +1,31 @@
+Requirements: 
+1. Build an MVC Sinatra Application
+2. Use ActiveRecord
+3. Use at least one has_many relationship on a User model and one belongs_to relationship on another model
+4. Have user signup and login functionality using bcrypt to secure passwords
+5. Validate uniqueness of user login attribute (username or email)
+6. Be able to see all resources that belong to other users
+7. Have full CRUD capabilities on the resource that belongs to that user
+8. Do NOT have the ability to edit or delete a resource that belongs to other users
+9. Validate user input so that bad data cannot be persisted to the database
+
+
+beauty store app:
+- user can view order form R
+- user can submit order C
+- user can edit order U 
+- user can delete order D
+
+User class
+- attr: name, password
+- can sign up
+- can log in
+- has many orders
+
+Orders class
+- attr: item, item_price, total ?
+- belongs to user 
+
+
+
+Order class 
