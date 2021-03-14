@@ -1,6 +1,11 @@
 class OrderController < ApplicationController
 
     get '/orders/new' do
-        "order form"
+        erb :'orders/new'
     end
+
+    post '/orders' do
+        "process our form"
+    end
+
 end
