@@ -1,5 +1,13 @@
 class UserController < ApplicationController
-    get '/user/signup' do
+
+    get '/users/signup' do
         erb :'/users/signup'
     end
+
+    post '/users/signup' do
+        @user = User.create(username: params[:username], password: params[:password])
+        binding.pry
+    end
+
+
 end
