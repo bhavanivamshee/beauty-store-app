@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_14_194712) do
+ActiveRecord::Schema.define(version: 2021_03_15_041713) do
 
 
 
@@ -18,9 +18,10 @@ ActiveRecord::Schema.define(version: 2021_03_14_194712) do
     t.string "item"
     t.integer "item_price"
     t.integer "total"
+    t.integer "user_id"
   end
 
-
+  
 
   create_table "users", force: :cascade do |t|
     t.string "username"

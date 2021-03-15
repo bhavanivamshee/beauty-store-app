@@ -1,0 +1,5 @@
+<% @orders.each do |order| %>
+    Order Number: <%= order.id %>
+    Total: <%= order.total %>
+    Username: <% order.user %>
+<% end %>

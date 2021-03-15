@@ -19,4 +19,14 @@ class OrderController < ApplicationController
         erb :'/orders/show'
     end
 
+    get '/orders' do
+        @orders = Order.all
+        erb :'/orders/index'
+    end
+
+    get '/orders/:id/edit' do
+        @order = Order.find(params[:id])
+        erb :'/orders/edit'
+    end
+
 end
