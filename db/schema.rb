@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_15_060739) do
+ActiveRecord::Schema.define(version: 2021_03_18_024028) do
 
   create_table "order", force: :cascade do |t|
     t.string "item"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 2021_03_15_060739) do
     t.integer "item_price"
     t.integer "total"
     t.integer "user_id"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.integer "unit_cost"
+    t.string "brand"
+    t.string "img"
+    t.string "description"
   end
 
   create_table "user", force: :cascade do |t|

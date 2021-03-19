@@ -1,0 +1,13 @@
+<div class="product_container">
+    <% @products.each.with_index(1) do |p, i| %>
+      <div class="product_details">
+      <img class="product_image" src="<%= p.img%>">
+      <div class="product_content">
+      <p><%= p.name %></p>
+      <p><%= p.brand %></p>
+      <p><%= p.description %></p>
+      <p><%= p.unit_cost %></p>
+      </div>
+      </div>
+    <% end %>
+  </div>
